@@ -47,7 +47,7 @@ function atualizaMedia(){
     const mediaFinal = calculaMediaFinal();
 
     document.getElementById('media-resultado-final').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
-    document.getElementById('media-valor-nota').innerHTML = mediaFinal;
+    document.getElementById('media-valor-nota').innerHTML = mediaFinal.toFixed(2);
 };
 
 function calculaMediaFinal(){
